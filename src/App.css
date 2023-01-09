@@ -1,0 +1,70 @@
+:root {
+  --leftBgColor: rgb(50, 113, 207);
+  --rightBgColor: #3ec454;
+}
+
+.msg-left div {
+  border-radius: 20px 10px 10px 0px;
+  background-color: var(--leftBgColor);
+  color: white;
+}
+
+.msg-right div {
+  border-radius: 10px 20px 0px 10px;
+  background-color: var(--rightBgColor);
+color: white;
+}
+
+.msg-left {
+  justify-content: flex-start !important;
+}
+
+.msg-right {
+  justify-content: flex-end !important;
+}
+
+.profile {
+  width: 50px;
+}
+
+.chatBox {
+  height: 70vh;
+  min-height: 70vh;
+  overflow-y: scroll;
+}
+
+p.labelDate {
+  font-size: 13px;
+}
+
+.navbar{
+  background: #00c6ff;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+.mybg,body{
+ background-color: #e5e5f7;
+opacity: 0.8;
+background: radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 17.5px 17.5px, linear-gradient(#45f799 1.4000000000000001px, transparent 1.4000000000000001px) 0 -0.7000000000000001px, linear-gradient(90deg, #45f799 1.4000000000000001px, #e5e5f7 1.4000000000000001px) -0.7000000000000001px 0;
+background-size: 35px 35px, 35px 35px, 17.5px 17.5px, 17.5px 17.5px;
+}
+
+@media only screen and (max-width: 600px) {
+  p.labelDate {
+    font-size: 9px;
+  }
+
+  .msg-left div p,
+  .msg-right div p {
+    font-size: 12px;
+  }
+
+  .profile {
+    width: 31px;
+  }
+}
+::-webkit-scrollbar {
+  display: none;
+}
