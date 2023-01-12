@@ -3,11 +3,12 @@ import './App.css';
 import SignIn from './Auth/SignIn';
 import Home from './pages/Home';
 import NavBar from './pages/NavBar';
-import { getAuth, getRedirectResult, onAuthStateChanged } from 'firebase/auth';
+import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import app from './firebaseConfig';
 function App() {
   const auth = getAuth(app)
   const [authUser, setAuthUser] = useState(null)
+  
   useEffect(() => {
     const listen = onAuthStateChanged(auth, (user: any) => {
       if (user) {
